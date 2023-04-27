@@ -1,7 +1,7 @@
 # Unified_HAL
 A common HAL for embedded systems spanning multiple architectures and vendors.  
 
-## Introduction of Idea
+## Introduction 
 
 HAL or Hardware Abstraction Layer is a fundamental modularity & abstraction principle implemented in software, between the physical hardware of a computer and the software that runs on that computer. It plays a crucial role in abstracting the specificities of target hardware and peripherals, and allows software to be written that is modular and non-redundant, and hence much less error-prone and widely compatible across different systems. 
 
