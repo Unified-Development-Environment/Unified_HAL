@@ -1,1 +1,1 @@
-void GPIO_Write(int PIN, int VALUE);
+void GPIO_Write(char* PORT, int PIN, int VALUE); 
