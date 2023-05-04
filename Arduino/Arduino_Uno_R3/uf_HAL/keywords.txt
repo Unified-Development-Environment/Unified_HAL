@@ -1,2 +1,1 @@
-uf_gpio    KEYWORD 1
 uf_gpioWrite    KEYWORD 2

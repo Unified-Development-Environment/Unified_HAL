@@ -7,15 +7,7 @@
 #include "uf_gpio.h"
 
 
-void uf_gpio::uf_gpioWrite(char PORT[] , int PIN , int VALUE) //parameters need to be unified
+void uf_gpioWrite(char PORT[] , int PIN , int VALUE) //parameters need to be unified
 {
     digitalWrite(PIN, VALUE);
 }
-
-// void Morse::dash()
-// {
-//   digitalWrite(_pin, HIGH);
-//   delay(1000);
-//   digitalWrite(_pin, LOW);
-//   delay(250);
-// }
