@@ -7,7 +7,7 @@
 
 #include "stm32f4f7_hal.h"
 
-void GPIO_Write(char* PORT, int PIN, int VALUE) {
+void uf_gpioWrite(char* PORT, int PIN, int VALUE) {
 
 	HAL_GPIO_WritePin(PORT, PIN, VALUE);
 

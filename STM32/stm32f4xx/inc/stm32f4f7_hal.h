@@ -8,6 +8,6 @@
 #ifndef INC_STM32F4F7_HAL_H_
 #define INC_STM32F4F7_HAL_H_
 
-void Unifd_GPIO_Write(char* PORT, int PIN, int VALUE);
+void uf_gpioWrite(char* PORT, int PIN, int VALUE);
 
 #endif /* INC_STM32F4F7_HAL_H_ */
