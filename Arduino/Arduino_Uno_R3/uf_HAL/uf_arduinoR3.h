@@ -2,8 +2,8 @@
   uf_gpio.h - Unified HAL Library for GPIO functions.
 */
 
-#ifndef uf_gpio_h
-#define uf_gpio_h
+#ifndef arduinoR3_h
+#define arduinoR3_h 
 
 #include "Arduino.h"
 
