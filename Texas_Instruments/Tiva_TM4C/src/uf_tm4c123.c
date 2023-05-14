@@ -35,3 +35,20 @@ int uf_gpioRead(char PORT[], int PIN) {			//Read GPIO_INPUT function
 	return GPIO_PORTF_DATA_R & uint_pow(2, PIN);
 
 }
+
+void uf_gpioToggle(char PORT[], int PIN) {
+
+	GPIO_PORTF_DATA_R = (~GPIO_PORTF_DATA_R & uint_pow(2, PIN));    //Set if low, reset if high
+
+}
+
+void uf_delay(int DELAY) {
+	
+	int delay = DELAY / 1000;
+	unsigned long volatile time;
+    time = 727240 * 200 * delay / 91;
+  
+    while(time)
+		time--;
+	
+}

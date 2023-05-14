@@ -14,5 +14,8 @@
 
 void uf_gpioWrite(char PORT[], int PIN, int VALUE);     //GPIO write function declaration 
 int uf_gpioRead(char PORT[], int PIN);          //GPIO read function declaration
+void uf_gpioToggle(char PORT[], int PIN);
+
+void uf_delay(int DELAY);
 
 #endif
