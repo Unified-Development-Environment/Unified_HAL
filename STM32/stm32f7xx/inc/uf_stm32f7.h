@@ -5,13 +5,22 @@
  * 
  */
 
-#ifndef INC_UF_STM32F7_H_
-#define INC_UF_STM32F7_H_
+#ifndef UF_STM32F7_H
+#define UF_STM32F7_H
 
-void uf_gpioWrite(char PORT[], int PIN, int VALUE);     //GPIO write function declaration
-int uf_gpioRead(char PORT[], int PIN);          //GPIO read function declaration
+#ifdef UF_USE_GPIO
+    // include GPIO sub-library
+    #include "uf_stm32_gpio_common_.h"
+    #include "uf_stm32_gpiof7.h"
+#endif
+
+#ifdef UF_USE_SPI
+    // include SPI sub-library
+    #include "uf_stm32_spi_common.h"
+    #include "uf_stm32f7_spi.h"
+#endif
+
 void uf_gpioToggle(char PORT[], int PIN);       
 
-void uf_delay(int DELAY);
 
 #endif 
